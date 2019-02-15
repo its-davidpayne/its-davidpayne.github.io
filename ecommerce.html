@@ -13296,7 +13296,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We will sort our results in order of lift. Naturally this line can be amended to sort by Support(lambda x: x[1]) or Confidence(lambda x: x[2][0][2]) instead.</p>
+<p>We will sort our results in order of lift. Naturally this line can be amended to sort by Support(<code>lambda x: x[1]</code>) or Confidence(<code>lambda x: x[2][0][2]</code>) instead.</p>
 
 </div>
 </div>
@@ -13324,7 +13324,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lift_sorted</span><span class="p">:</span>
@@ -13351,7 +13351,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Rule: REGENCY TEA PLATE GREEN -&gt; [&#39;REGENCY TEA PLATE PINK&#39;]
+<pre>Rule: REGENCY TEA PLATE PINK -&gt; [&#39;REGENCY TEA PLATE GREEN&#39;]
 Support: 0.010888030888030888
 Confidence: 0.7305699481865285
 Lift: 60.26038744595888
@@ -13376,12 +13376,12 @@ Support: 0.010154440154440154
 Confidence: 0.5977272727272727
 Lift: 46.912534435261705
 ==================================================
-Rule: SET/6 RED SPOTTY PAPER PLATES -&gt; [&#39;SET/20 RED RETROSPOT PAPER NAPKINS&#39;, &#39;SET/6 RED SPOTTY PAPER CUPS&#39;]
+Rule: SET/6 RED SPOTTY PAPER CUPS -&gt; [&#39;SET/20 RED RETROSPOT PAPER NAPKINS&#39;, &#39;SET/6 RED SPOTTY PAPER PLATES&#39;]
 Support: 0.010231660231660231
 Confidence: 0.8952702702702702
 Lift: 43.99905123339658
 ==================================================
-Rule: POPPY&#39;S PLAYHOUSE BEDROOM -&gt; [&#34;POPPY&#39;S PLAYHOUSE KITCHEN&#34;]
+Rule: POPPY&#39;S PLAYHOUSE KITCHEN -&gt; [&#34;POPPY&#39;S PLAYHOUSE BEDROOM&#34;]
 Support: 0.012123552123552124
 Confidence: 0.7370892018779344
 Lift: 43.38775074690568
@@ -13391,12 +13391,12 @@ Support: 0.010193050193050193
 Confidence: 0.6717557251908397
 Lift: 42.85338246907081
 ==================================================
-Rule: WOODEN STAR CHRISTMAS SCANDINAVIAN -&gt; [&#39;WOODEN TREE CHRISTMAS SCANDINAVIAN&#39;]
+Rule: WOODEN TREE CHRISTMAS SCANDINAVIAN -&gt; [&#39;WOODEN STAR CHRISTMAS SCANDINAVIAN&#39;]
 Support: 0.010888030888030888
 Confidence: 0.5475728155339806
 Lift: 41.83520921041327
 ==================================================
-Rule: SET/6 RED SPOTTY PAPER PLATES -&gt; [&#39;SET/6 RED SPOTTY PAPER CUPS&#39;]
+Rule: SET/6 RED SPOTTY PAPER CUPS -&gt; [&#39;SET/6 RED SPOTTY PAPER PLATES&#39;]
 Support: 0.013513513513513514
 Confidence: 0.8177570093457944
 Lift: 40.18957598113107
@@ -13411,17 +13411,17 @@ Support: 0.013513513513513514
 Confidence: 0.662878787878788
 Lift: 38.32267992424243
 ==================================================
-Rule: WOODEN STAR CHRISTMAS SCANDINAVIAN -&gt; [&#39;WOODEN HEART CHRISTMAS SCANDINAVIAN&#39;]
+Rule: WOODEN HEART CHRISTMAS SCANDINAVIAN -&gt; [&#39;WOODEN STAR CHRISTMAS SCANDINAVIAN&#39;]
 Support: 0.01501930501930502
 Confidence: 0.7203703703703703
 Lift: 36.22833513124775
 ==================================================
-Rule: SET OF 12 MINI LOAF BAKING CASES -&gt; [&#39;SET OF 12 FAIRY CAKE BAKING CASES&#39;]
+Rule: SET OF 12 FAIRY CAKE BAKING CASES -&gt; [&#39;SET OF 12 MINI LOAF BAKING CASES&#39;]
 Support: 0.011853281853281853
 Confidence: 0.5511669658886894
 Lift: 31.793372865294113
 ==================================================
-Rule: SET OF 6 TEA TIME BAKING CASES -&gt; [&#39;SET OF 12 FAIRY CAKE BAKING CASES&#39;]
+Rule: SET OF 12 FAIRY CAKE BAKING CASES -&gt; [&#39;SET OF 6 TEA TIME BAKING CASES&#39;]
 Support: 0.010077220077220077
 Confidence: 0.6796875
 Lift: 31.604858617594257
@@ -13436,7 +13436,7 @@ Support: 0.01138996138996139
 Confidence: 0.7195121951219513
 Lift: 27.485790344629113
 ==================================================
-Rule: WOODLAND CHARLOTTE BAG -&gt; [&#39;CHARLOTTE BAG SUKI DESIGN&#39;, &#39;STRAWBERRY CHARLOTTE BAG&#39;, &#39;RED RETROSPOT CHARLOTTE BAG&#39;]
+Rule: STRAWBERRY CHARLOTTE BAG -&gt; [&#39;RED RETROSPOT CHARLOTTE BAG&#39;, &#39;WOODLAND CHARLOTTE BAG&#39;, &#39;CHARLOTTE BAG SUKI DESIGN&#39;]
 Support: 0.010077220077220077
 Confidence: 0.7744807121661722
 Lift: 27.32840660095894
