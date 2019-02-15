@@ -13185,7 +13185,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Our data is still in long-format, where each row has an InvoiceNo and an item description. We want to convert this so each record has a unique InvoiceNo and a list of items associated with that invoice. In this case we use a Python dictionary to represent this, where each key is an InvoiceNo and the assocaited value is the list of items.</p>
+<p>Our data is still in long-format, where each row has an InvoiceNo and an item description. We want to convert this so each record has a unique InvoiceNo and a list of items associated with that invoice. In this case we use a Python dictionary to represent this, where each key is an InvoiceNo and the associated value is the list of items.</p>
 <p>This could also be done with a sparse matrix where every row is an invoice, and every column is an item. Cells would be blank except where an item appeared on an invoice, in which case that cell would have a value. This latter technique is used in certain big data environments, but in our case we will use the conceptually simpler representation.</p>
 
 </div>
@@ -13452,7 +13452,7 @@ Lift: 27.32840660095894
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The rules identified above suggest to me that the data represents a wholesaler: that is to say, that the customers are resellers rather than end-users. This is because the strongest rules relate to buying the same item in different colours or sizes or designs; something that we might expect from a purchaser looking to stock a shop but not necessarily from a generic customer. There are some rules that might represent general shopping (such as the purchase of paper napkins leading to a large lift in the purchase of paper cups and paper plates) but these are less comon</p>
+<p>The rules identified above suggest to me that the data represents a wholesaler: that is to say, that the customers are resellers rather than end-users. This is because the strongest rules relate to buying the same item in different colours or sizes or designs; something that we might expect from a purchaser looking to stock a shop but not necessarily from a generic customer. There are some rules that might represent general shopping (such as the purchase of paper plates leading to a large lift in the purchase of paper napkins and paper cups) but these are less common.</p>
 
 </div>
 </div>
@@ -13460,7 +13460,7 @@ Lift: 27.32840660095894
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A possible extension of this project would be to group items of the same design, colour or size together. This would likely require considerable manual manipulation, but would remove these 'wholesale' association rules, potentially allowing more subtle patterns to be identified.</p>
+<p>A possible extension of this project would be to group together items that differ only in design, colour or size. This would likely require considerable manual manipulation, but would remove these 'wholesale' association rules, potentially allowing more subtle patterns to be identified.</p>
 
 </div>
 </div>
