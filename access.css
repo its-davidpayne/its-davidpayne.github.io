@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* End CSS-Reset */
+
+@charset "UTF-8";
+@font-face {
+    font-family: 'fedra';
+    src: url('fonts/WF-020550-002332-000007.eot');
+    src: url('fonts/WF-020550-002332-000007.eot?#iefix') format('embedded-opentype'), url('fonts/WF-020550-002332-000007.woff') format('woff'), url('fonts/WF-020550-002332-000007.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fedra';
+    src: url('fonts/WF-020550-002332-000008.eot');
+    src: url('fonts/WF-020550-002332-000008.eot?#iefix') format('embedded-opentype'), url('fonts/WF-020550-002332-000008.woff') format('woff'), url('fonts/WF-020550-002332-000008.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'fedra';
+    src: url('fonts/WF-020550-002332-000025.eot');
+    src: url('fonts/WF-020550-002332-000025.eot?#iefix') format('embedded-opentype'), url('fonts/WF-020550-002332-000025.woff') format('woff'), url('fonts/WF-020550-002332-000025.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: fedra, PT Sans, Helvetica Neue, Helvetica;
+    font-size: 14px;
+    background-color: #efefef;
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* HEADER STYLING */
+
+.header {
+    background-color: #000;
+}
+
+.brand {
+    display: block;
+    background-image: url(https://secure.manchester.gov.uk/site/styles/css_img/logo-fallback.png);
+    background-image: url(https://secure.manchester.gov.uk/site/styles/css_img/logo-white.svg);
+    background-repeat: no-repeat;
+    min-height: 4em;
+    margin: 1em;
+    margin-left: 15%;
+}
+
+#breadcrumb {
+    background-color: #A62639;
+    padding-left: 15%;
+}
+
+#breadcrumb ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#breadcrumb li h1 {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 5px;
+}
+
+#breadcrumb li {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#breadcrumb li a {
+    color: white;
+    text-decoration: none;
+}
+
+#breadcrumb a:hover,
+#breadcrumb a:focus {
+    color: black;
+    -webkit-transition: color 500ms ease;
+    -moz-transition: color 500ms ease;
+    -ms-transition: color 500ms ease;
+    -o-transition: color 500ms ease;
+    transition: color 500ms ease;
+}
+
+
+/* END HEADER STYLING */
+
+
+/* BODY STYLING */
+
+#main_section {
+    background-color: #efefef;
+    text-align: left;
+    margin: 2em 15% 2em 15%;
+}
+
+.statement {
+    display: inline-block;
+}
+
+.statement p {
+    margin-bottom: 1em;
+}
+
+.statement ul {
+    padding-left: 1em;
+    list-style-type: disc;
+}
+
+.statement ul li {
+    margin-bottom: 0.5em;
+}
+
+
+/* END BODY STYLING */
+
+
+/* FOOTER STYLING */
+
+#footer {
+    background-color: #000000;
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #ffffff;
+    padding-top: 1em;
+}
+
+#contact {
+    color: #ffffff;
+    font-family: fedra, PT Sans, helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+# footer ul {
+    list-style-type: none;
+}
+
+#footer a:link {
+    background-color: transparent;
+    color: #ffffff;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+#footer a:visited {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #A62639;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: border 300ms ease;
+    -moz-transition: border 300ms ease;
+    -ms-transition: border 300ms ease;
+    -o-transition: border 300ms ease;
+    transition: border 300ms ease;
+}
+
+#footer a:focus {
+    background-color: transparent;
+    border-bottom: 2px solid #A62639;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer a:active {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer .brand {
+    overflow: auto;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    width: 16em;
+    text-indent: -999em;
+    background-image: url(https://secure.manchester.gov.uk/site/styles/css_img/logo-fallback.png);
+    background-image: url(https://secure.manchester.gov.uk/site/styles/css_img/logo-white.svg);
+    background-repeat: no-repeat;
+    min-height: 4em;
+    margin-top: 1em;
+}
+
+.logocol {
+    grid-area: logocol;
+    justify-self: center;
+}
+
+.copyrightcol {
+    grid-area: copyrightcol;
+    justify-self: left;
+}
+
+.linkscol {
+    grid-area: linkscol;
+    justify-self: left;
+}
+
+.glyphicon {
+    margin-right: 10px;
+}
+
+.socialcol {
+    grid-area: socialcol;
+    justify-self: left;
+}
+
+.icon {
+    width: 4em;
+    color: #ffffff;
+    border-radius: 2em;
+}
+
+.icon:hover {
+    background-color: #A62639;
+    -webkit-transition: background-color 500ms ease;
+    -moz-transition: background-color 500ms ease;
+    -ms-transition: background-color 500ms ease;
+    -o-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+}
+
+#footer a:focus .icon {
+    background-color: #A62639;
+}
+
+.socialcol ul {
+    text-align: center;
+}
+
+.socialcol ul li {
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+.social-text {
+    width: 10em;
+}
+
+@media only screen and (max-width: 639px) {
+    #opendatalinks {
+        display: grid;
+        grid-template-areas: "LGTC" "GMDSP" "INSPIRE" "PubScheme" "TermsLicense";
+        justify-content: space-around;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    .columns {
+        display: grid;
+        grid-template-areas: "logocol" "linkscol" "socialcol" "copyrightcol";
+        justify-content: space-around;
+    }
+    .linkscol {
+        justify-self: center;
+    }
+    .logocol {
+        justify-self: center;
+    }
+    .socialcol {
+        justify-self: center;
+    }
+    .copyrightcol {
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    .columns {
+        display: grid;
+        grid-template-areas: "logocol linkscol" "socialcol socialcol" "copyrightcol copyrightcol";
+        justify-content: space-around;
+        grid-gap: 1em;
+    }
+    .logocol {
+        padding-top: 1em;
+    }
+    .socialcol {
+        justify-self: center;
+    }
+    .copyrightcol {
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    #opendatalinks {
+        display: grid;
+        grid-template-areas: "LGTC . GMDSP" "INSPIRE . PubScheme" ". TermsLicense .";
+        justify-content: space-around;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    #opendatalinks {
+        display: grid;
+        grid-template-areas: '. LGTC GMDSP INSPIRE .' '. PubScheme . TermsLicense .';
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .columns {
+        display: grid;
+        grid-template-areas: "logocol linkscol socialcol socialcol" "logocol linkscol copyrightcol copyrightcol";
+        justify-content: space-around;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1510px) {
+    #opendatalinks {
+        display: grid;
+        grid-template-areas: '. . LGTC GMDSP INSPIRE PubScheme TermsLicense . .';
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+    .columns {
+        display: grid;
+        grid-template-areas: '. logocol linkscol socialcol .' '. logocol linkscol copyrightcol .';
+        justify-content: space-around;
+        grid-gap: 20px;
+    }
+    .copyrightcol {
+        justify-self: center;
+    }
+    .logocol {
+        justify-self: center;
+        align-self: auto;
+    }
+}
+
+
+/* END FOOTER STYLING */
