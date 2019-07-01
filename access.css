@@ -141,7 +141,6 @@ table {
 
 /* End CSS-Reset */
 
-@charset "UTF-8";
 @font-face {
     font-family: 'fedra';
     src: url('fonts/WF-020550-002332-000007.eot');
@@ -285,7 +284,7 @@ body {
     padding-top: 5px;
 }
 
-# footer ul {
+#footer ul {
     list-style-type: none;
 }
 
