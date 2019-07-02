@@ -168,8 +168,8 @@ table {
 
 body {
     font-family: fedra, PT Sans, Helvetica Neue, Helvetica;
-    font-size: 14pt;
     background-color: #efefef;
+    font-size: 110%;
 }
 
 .container {
