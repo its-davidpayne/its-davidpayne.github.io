@@ -73,6 +73,7 @@ src: url('fonts/WF-020550-002332-000008.eot');
 body { 
     font-family: fedra, PT Sans, Helvetica Neue, Helvetica; 
     background-color: #efefef;
+    color: #000000;
 }
 .container { 
     width:100%; 
@@ -128,6 +129,9 @@ body {
 /* END HEADER STYLING */
 
 /* BODY STYLING */
+.statement a {
+    color: #0000FF;
+}
 h2 {
     font-size: 2em;
     font-weight: bold;
@@ -152,6 +156,7 @@ h3 {
 .statement ul {
     padding-left: 1em;
     list-style-type: disc;
+    margin-bottom: 1em;
 }
 .statement ul li {
     margin-bottom: 0.5em;
@@ -178,7 +183,7 @@ h3 {
     text-align: center;
     padding-top: 5px;
 }
-# footer ul {
+#footer ul {
     list-style-type: none;
 }
 #footer a:link {
